@@ -52,6 +52,22 @@
                                 </div>
                             @enderror
                         </div>
+                        <div class="form-group">
+                            <label for="bobot">Bobot nilai</label>
+                            <small>*Pengaruh gejala terhadap munculnya penyakit</small>
+                            <select name="bobot" id="bobot" class="form-control">
+                                <option value="" selected readonly>-- Pilih --</option>
+                                <option value="4">Sangat berpengaruh (4)</option>
+                                <option value="3">Berpengaruh (3)</option>
+                                <option value="2">Cukup berpengaruh (2)</option>
+                                <option value="1">Kurang berpengaruh (1)</option>
+                            </select>
+                            @error('bobot')
+                                <div class="invalid-feedback">
+                                    {{ $message }}
+                                </div>
+                            @enderror
+                        </div>
                         
                     </div>
                     <div class="card-footer text-right">

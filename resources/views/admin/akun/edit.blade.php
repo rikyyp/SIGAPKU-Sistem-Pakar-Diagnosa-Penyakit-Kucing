@@ -12,7 +12,7 @@
         <div class="section-body">
             <div class="card card-primary">
                 <div class="card-header">
-                    <h4>Tambah {{ $title }}</h4>
+                    <h4>Edit {{ $title }}</h4>
                 </div>
                 <form action="{{ route('admin.akun.update', $akun->id) }}" method="post">
                     @method('PUT')

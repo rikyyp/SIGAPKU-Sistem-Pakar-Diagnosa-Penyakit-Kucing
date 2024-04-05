@@ -73,14 +73,16 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="berat">Berat Badan</label>
+                                    <small>*Dalam kilogram</small>
                                     <input type="number" class="form-control" id="berat" name="berat"
                                         placeholder="Masukkan Berat Badan Peliharaan" value="0">
                                     <small>*Jika tidak diketahui masukkan angka 0</small>
                                 </div>
                                 <div class="form-group">
-                                    <label for="suhu">Suhu Badan</label>
+                                    <label for="suhu">Suhu Badan </label>
+                                    <small>*Dalam derajat celcius</small>
                                     <input type="number" class="form-control" id="suhu" name="suhu"
-                                        placeholder="Masukkan Suhu Badan Peliharaan" step='0.01' value='0.00'>
+                                        placeholder="Masukkan Suhu Badan Peliharaan" step='0' value='0'>
                                     <small>*Jika tidak diketahui masukkan angka 0</small>
                                 </div>
                             </div>

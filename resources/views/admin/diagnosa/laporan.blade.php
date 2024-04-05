@@ -47,8 +47,8 @@
 <body>
     <div class="container" id="laporan">
         <h1 class="text-center mb-n-2 mt-n-3">{{ $judul }}</h1>
-        <h2 class="text-center mb-n-1">Dinas Kelautan Perikanan dan Peternakan</h2>
-        <p class="text-center">Jl. R.A Kartini Nomor 12 Kabupaten Batang</p>
+        <h2 class="text-center mb-n-1">Sebagai Pemeriksaan Dini</h2>
+        <p class="text-center">*Sangat disarankan untuk dibawa ke ahli hewan kucing terdekat</p>
         <hr>
         <h3 class="text-center">Periode :
             {{$awalPeriode}} s/d 

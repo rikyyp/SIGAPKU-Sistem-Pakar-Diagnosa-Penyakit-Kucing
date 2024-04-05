@@ -1,0 +1,27 @@
+ A1|B1=1/3
+        A2|B1=1/3
+        
+        A1|B2=1/3
+        A1|B2=1/3
+
+        B1|A1=1/2
+        B2|A1=0/2
+        B3|A1=1/2
+
+        B1|A1=1/2
+        B2|A2=1/2
+        B3|A3=1/2
+
+        Rumus Naive Bayes (P(B|A)) = ((P(A|B)*P(A)) / P(B) )
+        A=Penyakit
+        B=Gejala
+        P=Probabilitas
+
+        (Ax|Bx) = [P(Ax|Bx)*P(Ax)] / [P(Ax|Bx)*P(Ax)]+..+[P(Ax|Bxn)*P(Axn)]
+
+        P(Ax) = (Ax|Bx)
+
+        Total Bayes = P(Ax)+..+P(Axn)
+
+        Ax = P (Ax) / Total Bayes
+        Pilih Hasil yang paling tinggi

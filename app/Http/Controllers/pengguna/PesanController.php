@@ -8,11 +8,11 @@ use App\Http\Requests\pengguna\PesanRequest;
 
 class PesanController extends PenggunaController
 {
-    public $title = 'Kontak';
+    public $title = 'Pesan';
     public function index()
     {
         $title = $this->title;
-        $bcrum = $this->bcrum('Kontak');
+        $bcrum = $this->bcrum('Pesan');
         return view('pengguna.pesan.create', compact('title', 'bcrum'));
     }
 

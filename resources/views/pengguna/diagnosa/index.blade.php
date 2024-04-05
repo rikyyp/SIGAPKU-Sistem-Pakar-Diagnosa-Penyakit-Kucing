@@ -89,11 +89,9 @@
                                             <div class="form-group">
                                                 <select name="kondisi[]" id="kondisi" class="form-control">
                                                     <option disabled selected>Pilih</option>
-                                                    <option value="{{ $gejala->id }}_1">Pasti</option>
-                                                    <option value="{{ $gejala->id }}_2">Hampir pasti</option>
-                                                    <option value="{{ $gejala->id }}_3">Mungkin</option>
-                                                    <option value="{{ $gejala->id }}_4">Ragu-ragu</option>
                                                     <option value="{{ $gejala->id }}_0">Tidak</option>
+                                                    <option value="{{ $gejala->id }}_1">Ya</option>
+                                                
                                                 </select>
                                             </div>
                                         </td>

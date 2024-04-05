@@ -28,13 +28,7 @@
                                     <td>{{$gejala->nama}}</td>
                                     <td>
                                         @if($kp == 1)
-                                        Pasti
-                                        @elseif($kp == 2)
-                                        Hampir pasti
-                                        @elseif($kp == 3)
-                                        Mungkin
-                                        @elseif($kp == 4)
-                                        Ragu-ragu
+                                        Ya
                                         @else
                                         Tidak
                                         @endif
@@ -48,13 +42,13 @@
             </div>
             <div class="my-4"></div>
             @foreach ($penyakits as $penyakit)
-                @if ($penyakit->id == array_key_first($cfHasil))
+                @if ($penyakit->id == array_key_first($hasil_akhir))
                     <div class="row bg-light rounded-sm mt-4">
                         <div class="col-md-6 p-3">
                             <h3 style="font-size: 25px" class="mb-4">Hasil Diagnosa</h3>
                             <p>Berdasarkan daftar gejala yang dipilih, Penyakit yang diderita kucing peliharaan anda :</p>
                                 <h4 style="font-size: 22px" class="mb-3 text-success">{{ $penyakit->nama }}</h4>
-                                <p style="font-size: 20px" class="text-success">Presentase : {{$cfHasil[array_key_first($cfHasil)] * 100}}%</p>
+                                <p style="font-size: 20px" class="text-success">Presentase : {{$hasil_akhir[array_key_first($hasil_akhir)] * 100}}%</p>
                         </div>
                         <div class="col-md-6 d-flex justify-content-center p-3">
                             <img src="{{asset('assets/gambar/' . $penyakit->gambar)}}" alt="{{$penyakit->nama}}" width="400px" class="rounded-lg">
@@ -96,10 +90,10 @@
                                 @php
                                     $i = 0;
                                 @endphp
-                                @foreach ($cfHasil as $key => $cf)
+                                @foreach ($hasil_akhir as $key => $cf)
                                     @foreach ($penyakits as $penyakit)
                                         @if ($key == $penyakit->id)
-                                        @if($i <= 3)
+                                        @if($i <= 10)
                                         <tr>
                                             <td>{{$i++}}</td>
                                             <td>{{$penyakit->nama}}</td>
@@ -115,7 +109,7 @@
                 </div>
             </div>
             <div class="just-print">
-                <p>*) Hasil diagnosa dapat ditunjukan ke Puskeswan Batang</p></p>
+                <p>*) Hasil diagnosa</p></p>
             </div>
         </div>
     </section>
